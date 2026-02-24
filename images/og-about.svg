@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1A1A2E"/>
+  <!-- Top gold accent line -->
+  <rect x="100" y="80" width="1000" height="3" fill="#D4AF37"/>
+  <!-- Bottom gold accent line -->
+  <rect x="100" y="550" width="1000" height="3" fill="#D4AF37"/>
+  <!-- Decorative gold corner elements -->
+  <rect x="80" y="60" width="40" height="3" fill="#D4AF37"/>
+  <rect x="80" y="60" width="3" height="40" fill="#D4AF37"/>
+  <rect x="1080" y="60" width="40" height="3" fill="#D4AF37"/>
+  <rect x="1117" y="60" width="3" height="40" fill="#D4AF37"/>
+  <rect x="80" y="570" width="40" height="3" fill="#D4AF37"/>
+  <rect x="80" y="533" width="3" height="40" fill="#D4AF37"/>
+  <rect x="1080" y="570" width="40" height="3" fill="#D4AF37"/>
+  <rect x="1117" y="533" width="3" height="40" fill="#D4AF37"/>
+  <!-- Decorative open book icon -->
+  <path d="M570,170 Q580,160 600,165 Q620,160 630,170 L630,210 Q620,200 600,205 Q580,200 570,210 Z" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.35"/>
+  <line x1="600" y1="165" x2="600" y2="205" stroke="#D4AF37" stroke-width="1.5" opacity="0.35"/>
+  <!-- Title -->
+  <text x="600" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="bold" fill="#FFFFFF">About CelebrityParis.com</text>
+  <!-- Decorative gold divider -->
+  <rect x="400" y="340" width="400" height="2" fill="#D4AF37"/>
+  <circle cx="600" cy="341" r="5" fill="#D4AF37"/>
+  <circle cx="500" cy="341" r="3" fill="#D4AF37"/>
+  <circle cx="700" cy="341" r="3" fill="#D4AF37"/>
+  <!-- Subtitle -->
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#B8B8CC">Mission, Ethics &amp; Sources</text>
+  <!-- Bottom branding -->
+  <text x="600" y="510" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#D4AF37">CelebrityParis.com</text>
+</svg>
