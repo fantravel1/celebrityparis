@@ -540,41 +540,464 @@ window.CelebrityParisData = (function () {
         { year: '1954', venue: 'Les Deux Magots', description: 'Won the Prix Goncourt for The Mandarins.', source: 'Press archives' },
         { year: '1986', venue: 'Montparnasse Cemetery', description: 'Buried beside Sartre at Montparnasse Cemetery.', source: 'Cemetery records' }
       ]
+    },
+    {
+      id: 'claude-monet',
+      name: 'Claude Monet',
+      initials: 'CM',
+      color: '#5B8FA8',
+      nationality: 'French',
+      era: '1860s - 1920s',
+      eraRange: '1860s-1920s',
+      categories: ['art'],
+      connections: [
+        { year: '1862', venue: 'Louvre', description: 'Studied the Old Masters and painted copies at the Louvre as a young art student.', source: 'Monet biographies' },
+        { year: '1874', venue: 'Boulevard des Capucines', description: 'Exhibited Impression, Sunrise at the first Impressionist exhibition, giving the movement its name.', source: 'Exhibition catalogue 1874' },
+        { year: '1877', venue: 'Gare Saint-Lazare', description: 'Painted his famous series of the Gare Saint-Lazare station interiors.', source: 'Art history records' },
+        { year: '1895', venue: 'Galerie Durand-Ruel', description: 'Exhibited the Rouen Cathedral series to wide acclaim.', source: 'Gallery archives' },
+        { year: '1922', venue: 'Musee de lOrangerie', description: 'Donated his monumental Water Lilies murals to the French state.', source: 'Museum records' }
+      ]
+    },
+    {
+      id: 'henri-matisse',
+      name: 'Henri Matisse',
+      initials: 'HM',
+      color: '#E2725B',
+      nationality: 'French',
+      era: '1890s - 1950s',
+      eraRange: '1890s-1950s',
+      categories: ['art'],
+      connections: [
+        { year: '1895', venue: 'Ecole des Beaux-Arts', description: 'Studied under Gustave Moreau at the prestigious Paris art school.', source: 'School records' },
+        { year: '1905', venue: 'Grand Palais', description: 'Exhibited at the Salon dAutomne, earning the name "Fauve" for his wild use of color.', source: 'Salon dAutomne catalogue' },
+        { year: '1906', venue: '27 Rue de Fleurus', description: 'Met Picasso at Gertrude Steins legendary salon.', source: 'Stein memoirs' },
+        { year: '1910', venue: 'Grand Palais', description: 'Continued showing works at major Paris salons.', source: 'Exhibition records' },
+        { year: '1950', venue: 'Musee National dArt Moderne', description: 'Major retrospective in Paris celebrating his career.', source: 'Museum records' }
+      ]
+    },
+    {
+      id: 'marlene-dietrich',
+      name: 'Marlene Dietrich',
+      initials: 'MD',
+      color: '#8B6969',
+      nationality: 'German-American',
+      era: '1930s - 1970s',
+      eraRange: '1930s-1970s',
+      categories: ['film', 'music'],
+      connections: [
+        { year: '1933', venue: 'Ritz Paris', description: 'First Paris stay; fell in love with the city and its fashion.', source: 'Dietrich memoirs' },
+        { year: '1937', venue: 'Hotel Lancaster', description: 'Resided at this Right Bank hotel during film work in Europe.', source: 'Hotel records' },
+        { year: '1950', venue: 'Hotel Plaza Athenee', description: 'Stayed during extended Paris visits in the postwar years.', source: 'Hotel records' },
+        { year: '1959', venue: 'Olympia', description: 'Performed a legendary one-woman show at the Olympia.', source: 'Olympia archives' },
+        { year: '1975', venue: 'Avenue Montaigne', description: 'Moved to her final Paris apartment at 12 Avenue Montaigne.', source: 'Biographies' },
+        { year: '1992', venue: 'Eglise de la Madeleine', description: 'Her funeral service was held at La Madeleine church.', source: 'Press archives' }
+      ]
+    },
+    {
+      id: 'duke-ellington',
+      name: 'Duke Ellington',
+      initials: 'DE',
+      color: '#4B3621',
+      nationality: 'American',
+      era: '1930s - 1970s',
+      eraRange: '1930s-1970s',
+      categories: ['music'],
+      connections: [
+        { year: '1933', venue: 'Salle Pleyel', description: 'First Paris concert at the prestigious concert hall; rapturously received.', source: 'Concert archives' },
+        { year: '1939', venue: 'Moulin Rouge', description: 'Performed at the Moulin Rouge during a European tour.', source: 'Venue archives' },
+        { year: '1950', venue: 'Olympia', description: 'Played multiple sold-out dates at the Olympia.', source: 'Olympia archives' },
+        { year: '1958', venue: 'Cafe de Flore', description: 'Visited Saint-Germain jazz haunts between concert engagements.', source: 'Music press' },
+        { year: '1966', venue: 'Theatre des Champs-Elysees', description: 'Performed the Sacred Concert series for Parisian audiences.', source: 'Theater archives' }
+      ]
+    },
+    {
+      id: 'miles-davis',
+      name: 'Miles Davis',
+      initials: 'MiD',
+      color: '#2F4F4F',
+      nationality: 'American',
+      era: '1940s - 1990s',
+      eraRange: '1940s-1990s',
+      categories: ['music'],
+      connections: [
+        { year: '1949', venue: 'Salle Pleyel', description: 'Performed at the Paris Jazz Festival, launching his love affair with the city.', source: 'Festival records' },
+        { year: '1949', venue: 'Club Saint-Germain', description: 'Played at Left Bank jazz clubs and began a relationship with Juliette Greco.', source: 'Davis autobiography' },
+        { year: '1957', venue: 'Olympia', description: 'Recorded the Ascenseur pour lechafaud soundtrack for Louis Malles film.', source: 'Fontana Records' },
+        { year: '1964', venue: 'Salle Pleyel', description: 'Performed with his classic quintet to adoring Parisian audiences.', source: 'Concert archives' },
+        { year: '1991', venue: 'La Villette', description: 'One of his final European performances at the Grande Halle.', source: 'Concert records' }
+      ]
+    },
+    {
+      id: 'juliette-greco',
+      name: 'Juliette Greco',
+      initials: 'JG',
+      color: '#2C2C2C',
+      nationality: 'French',
+      era: '1940s - 2010s',
+      eraRange: '1940s-2010s',
+      categories: ['music'],
+      connections: [
+        { year: '1946', venue: 'Le Tabou', description: 'Became the muse of existentialism at this Saint-Germain cellar club.', source: 'Music press archives' },
+        { year: '1949', venue: 'Club Saint-Germain', description: 'Romance with Miles Davis while performing in Left Bank clubs.', source: 'Greco memoirs' },
+        { year: '1951', venue: 'Cafe de Flore', description: 'A defining presence at Cafe de Flore alongside Sartre and Camus.', source: 'Social chronicles' },
+        { year: '1954', venue: 'Olympia', description: 'Headlined at the Olympia, cementing her status as a chanson icon.', source: 'Olympia archives' },
+        { year: '1966', venue: 'Bobino', description: 'Performed legendary concerts at the Montparnasse music hall.', source: 'Venue archives' }
+      ]
+    },
+    {
+      id: 'grace-kelly',
+      name: 'Grace Kelly',
+      initials: 'GrK',
+      color: '#C4B49A',
+      nationality: 'American-Monegasque',
+      era: '1950s - 1980s',
+      eraRange: '1950s-1980s',
+      categories: ['film', 'royalty-politics', 'fashion'],
+      connections: [
+        { year: '1955', venue: 'Carlton Cannes (visited Paris)', description: 'Met Prince Rainier during a Paris photo shoot for Look magazine before the Cannes Film Festival.', source: 'Press archives' },
+        { year: '1956', venue: 'Hotel Plaza Athenee', description: 'Stayed during her Paris visits as a Hollywood star.', source: 'Hotel records' },
+        { year: '1960', venue: 'Grand Palais', description: 'Attended fashion shows and cultural events as Princess of Monaco.', source: 'Press archives' },
+        { year: '1970', venue: 'Versailles', description: 'Attended diplomatic galas at the Palace of Versailles.', source: 'Government records' },
+        { year: '1976', venue: 'Christian Dior HQ', description: 'Front row at Dior couture shows on Avenue Montaigne.', source: 'Fashion press' }
+      ]
+    },
+    {
+      id: 'james-baldwin',
+      name: 'James Baldwin',
+      initials: 'JBa',
+      color: '#654321',
+      nationality: 'American',
+      era: '1940s - 1980s',
+      eraRange: '1940s-1980s',
+      categories: ['literature'],
+      connections: [
+        { year: '1948', venue: 'Les Deux Magots', description: 'Arrived in Paris as a young writer and frequented the literary cafes.', source: 'Baldwin biographies' },
+        { year: '1949', venue: 'Hotel de Verneuil', description: 'Lived in cheap Left Bank hotels while finishing Go Tell It on the Mountain.', source: 'Baldwin correspondence' },
+        { year: '1953', venue: 'Cafe de Flore', description: 'Published Go Tell It on the Mountain while writing at Saint-Germain cafes.', source: 'Publishing records' },
+        { year: '1956', venue: 'Sorbonne', description: 'Attended the Congress of Black Writers and Artists at the Sorbonne.', source: 'Conference records' },
+        { year: '1972', venue: 'Saint-Paul-de-Vence (via Paris)', description: 'Continued to visit Paris frequently from his home in the south of France.', source: 'Baldwin correspondence' }
+      ]
+    },
+    {
+      id: 'jean-seberg',
+      name: 'Jean Seberg',
+      initials: 'JSe',
+      color: '#87CEEB',
+      nationality: 'American',
+      era: '1950s - 1970s',
+      eraRange: '1950s-1970s',
+      categories: ['film'],
+      connections: [
+        { year: '1957', venue: 'Studios de Boulogne', description: 'Cast in Otto Premigers Saint Joan; worked at Paris studios.', source: 'Film production records' },
+        { year: '1960', venue: 'Champs-Elysees', description: 'Starred in Breathless, filmed on the Champs-Elysees, becoming a New Wave icon.', source: 'Cahiers du Cinema' },
+        { year: '1963', venue: 'Rue du Bac', description: 'Settled in the 7th arrondissement; became a Parisian by adoption.', source: 'Biographies' },
+        { year: '1968', venue: 'Cafe de Flore', description: 'Active in the Parisian intellectual scene during the May 68 protests.', source: 'Press archives' }
+      ]
+    },
+    {
+      id: 'edgar-degas',
+      name: 'Edgar Degas',
+      initials: 'ED',
+      color: '#DAA520',
+      nationality: 'French',
+      era: '1860s - 1910s',
+      eraRange: '1860s-1910s',
+      categories: ['art'],
+      connections: [
+        { year: '1862', venue: 'The Louvre', description: 'Met Edouard Manet while copying paintings at the Louvre.', source: 'Art history records' },
+        { year: '1874', venue: 'Boulevard des Capucines', description: 'Exhibited at the first Impressionist exhibition alongside Monet and Renoir.', source: 'Exhibition catalogue 1874' },
+        { year: '1876', venue: 'Opera Garnier', description: 'Created his legendary paintings and sculptures of dancers at the Paris Opera.', source: 'Musee dOrsay records' },
+        { year: '1886', venue: 'Galerie Durand-Ruel', description: 'Exhibited works at the final Impressionist exhibition.', source: 'Gallery archives' },
+        { year: '1917', venue: 'Montmartre Cemetery', description: 'Buried at Montmartre Cemetery after a lifetime in Paris.', source: 'Cemetery records' }
+      ]
+    },
+    {
+      id: 'kanye-west',
+      name: 'Kanye West',
+      initials: 'KW',
+      color: '#3D3D3D',
+      nationality: 'American',
+      era: '2000s - Present',
+      eraRange: '2000s-2020s',
+      categories: ['music', 'fashion'],
+      connections: [
+        { year: '2009', venue: 'Grand Palais', description: 'Attended Paris Fashion Week shows as a front row fixture.', source: 'Fashion press' },
+        { year: '2011', venue: 'Hotel Le Meurice', description: 'Stayed while working on fashion collaborations in Paris.', source: 'Press reports' },
+        { year: '2014', venue: 'Versailles', description: 'Married Kim Kardashian at the Palace of Versailles in a lavish ceremony.', source: 'Press archives' },
+        { year: '2016', venue: 'Palais de Tokyo', description: 'Debuted Yeezy Season collections during Paris Fashion Week.', source: 'Fashion press' },
+        { year: '2022', venue: 'Balenciaga HQ', description: 'Collaborated with Balenciaga; attended Paris shows.', source: 'Fashion press' }
+      ]
+    },
+    {
+      id: 'kim-kardashian',
+      name: 'Kim Kardashian',
+      initials: 'KK',
+      color: '#C4A882',
+      nationality: 'American',
+      era: '2010s - Present',
+      eraRange: '2010s-2020s',
+      categories: ['fashion'],
+      connections: [
+        { year: '2012', venue: 'Grand Palais', description: 'First major Paris Fashion Week appearance, front row at multiple shows.', source: 'Fashion press' },
+        { year: '2014', venue: 'Versailles', description: 'Pre-wedding celebrations at the Palace of Versailles.', source: 'Press archives' },
+        { year: '2016', venue: 'Hotel de Pourtalès', description: 'Stayed at this luxury residence during Paris Fashion Week.', source: 'Press reports' },
+        { year: '2019', venue: 'Grand Palais', description: 'Front row at Chanel and Dior during Haute Couture Week.', source: 'Fashion press' }
+      ]
+    },
+    {
+      id: 'victor-hugo',
+      name: 'Victor Hugo',
+      initials: 'VH',
+      color: '#4A3728',
+      nationality: 'French',
+      era: '1820s - 1880s',
+      eraRange: '1820s-1880s',
+      categories: ['literature'],
+      connections: [
+        { year: '1831', venue: 'Notre-Dame Cathedral', description: 'Published The Hunchback of Notre-Dame, inspired by the cathedral.', source: 'Publishing records' },
+        { year: '1841', venue: 'Academie Francaise', description: 'Elected to the Academie Francaise at the Institut de France.', source: 'Academie records' },
+        { year: '1862', venue: 'Place des Vosges', description: 'Lived at 6 Place des Vosges, now the Maison de Victor Hugo museum.', source: 'Museum records' },
+        { year: '1870', venue: 'Gare du Nord', description: 'Returned from exile to a heroes welcome at the Gare du Nord.', source: 'Press archives' },
+        { year: '1885', venue: 'Pantheon', description: 'His funeral procession drew two million mourners; interred at the Pantheon.', source: 'Government records' }
+      ]
+    },
+    {
+      id: 'josephine-de-beauharnais',
+      name: 'Empress Josephine',
+      initials: 'EJ',
+      color: '#8B7D6B',
+      nationality: 'French-Martiniquais',
+      era: '1790s - 1810s',
+      eraRange: '1790s-1810s',
+      categories: ['royalty-politics', 'fashion'],
+      connections: [
+        { year: '1796', venue: 'Mairie du 2e', description: 'Married Napoleon Bonaparte in a civil ceremony.', source: 'Historical records' },
+        { year: '1804', venue: 'Notre-Dame Cathedral', description: 'Crowned Empress alongside Napoleon in the coronation ceremony.', source: 'Historical records' },
+        { year: '1805', venue: 'Tuileries Palace', description: 'Reigned as Empress from the Tuileries Palace.', source: 'Court records' },
+        { year: '1809', venue: 'Chateau de Malmaison', description: 'Retired to her beloved Malmaison estate after the divorce.', source: 'Historical records' }
+      ]
+    },
+    {
+      id: 'toulouse-lautrec',
+      name: 'Henri de Toulouse-Lautrec',
+      initials: 'TL',
+      color: '#B22222',
+      nationality: 'French',
+      era: '1880s - 1900s',
+      eraRange: '1880s-1900s',
+      categories: ['art'],
+      connections: [
+        { year: '1882', venue: 'Montmartre', description: 'Moved to Montmartre and immersed himself in the bohemian quarter.', source: 'Lautrec biographies' },
+        { year: '1889', venue: 'Moulin Rouge', description: 'Created the iconic Moulin Rouge poster that defined the Belle Epoque.', source: 'Moulin Rouge archives' },
+        { year: '1892', venue: 'Le Chat Noir', description: 'Frequented the legendary Montmartre cabaret and created lithographs.', source: 'Cabaret archives' },
+        { year: '1895', venue: 'Moulin Rouge', description: 'Continued documenting Parisian nightlife in his distinctive style.', source: 'Art history records' }
+      ]
+    },
+    {
+      id: 'man-ray',
+      name: 'Man Ray',
+      initials: 'MR',
+      color: '#696969',
+      nationality: 'American',
+      era: '1920s - 1970s',
+      eraRange: '1920s-1970s',
+      categories: ['art'],
+      connections: [
+        { year: '1921', venue: 'Montparnasse', description: 'Arrived in Paris and joined the Dada and Surrealist movements.', source: 'Man Ray autobiography' },
+        { year: '1924', venue: 'Galerie Surrealiste', description: 'Exhibited photographs and rayographs at Surrealist galleries.', source: 'Gallery records' },
+        { year: '1929', venue: 'Montparnasse', description: 'Photographed the Parisian avant-garde including Kiki de Montparnasse.', source: 'Photographic archives' },
+        { year: '1934', venue: 'Galerie des Cahiers dArt', description: 'Major exhibition of photographs and objects.', source: 'Gallery records' },
+        { year: '1976', venue: 'Montparnasse Cemetery', description: 'Buried at Montparnasse Cemetery with his wife Juliet.', source: 'Cemetery records' }
+      ]
+    },
+    {
+      id: 'serge-gainsbourg',
+      name: 'Serge Gainsbourg',
+      initials: 'SG',
+      color: '#4F4F4F',
+      nationality: 'French',
+      era: '1950s - 1991',
+      eraRange: '1950s-1990s',
+      categories: ['music'],
+      connections: [
+        { year: '1958', venue: 'Milord lArsouille', description: 'Early performances at this Left Bank cabaret club.', source: 'Music biographies' },
+        { year: '1964', venue: 'Olympia', description: 'Performed at the legendary music hall.', source: 'Olympia archives' },
+        { year: '1969', venue: 'Studios Davout', description: 'Recorded Je taime... moi non plus with Jane Birkin.', source: 'Recording studio records' },
+        { year: '1972', venue: '5bis Rue de Verneuil', description: 'Moved into his legendary house on Rue de Verneuil in the 7th.', source: 'Biographies' },
+        { year: '1991', venue: 'Montparnasse Cemetery', description: 'Buried at Montparnasse; his Rue de Verneuil house remains a pilgrimage site.', source: 'Cemetery records' }
+      ]
+    },
+    {
+      id: 'jane-birkin',
+      name: 'Jane Birkin',
+      initials: 'JBi',
+      color: '#C9B8A5',
+      nationality: 'British-French',
+      era: '1960s - 2020s',
+      eraRange: '1960s-2020s',
+      categories: ['film', 'music', 'fashion'],
+      connections: [
+        { year: '1968', venue: 'Studios de Boulogne', description: 'Arrived in Paris to film Slogan with Serge Gainsbourg.', source: 'Film production records' },
+        { year: '1969', venue: 'Cafe de Flore', description: 'Became a fixture of Saint-Germain bohemian life.', source: 'Social chronicles' },
+        { year: '1972', venue: '5bis Rue de Verneuil', description: 'Lived with Gainsbourg in the legendary Rue de Verneuil house.', source: 'Biographies' },
+        { year: '1984', venue: 'Hermes', description: 'Inspired the creation of the iconic Birkin bag during a chance meeting with Jean-Louis Dumas on a Paris-London flight.', source: 'Hermes archives' },
+        { year: '2023', venue: 'Eglise Saint-Roch', description: 'Her funeral at Saint-Roch drew thousands of mourners to the streets of Paris.', source: 'Press archives' }
+      ]
+    },
+    {
+      id: 'lady-gaga',
+      name: 'Lady Gaga',
+      initials: 'LG',
+      color: '#FF69B4',
+      nationality: 'American',
+      era: '2000s - Present',
+      eraRange: '2000s-2020s',
+      categories: ['music', 'fashion'],
+      connections: [
+        { year: '2010', venue: 'Grand Palais', description: 'Attended Paris Fashion Week shows in her most avant-garde outfits.', source: 'Fashion press' },
+        { year: '2012', venue: 'Palais Omnisports de Bercy', description: 'Performed for sold-out crowds during the Born This Way Ball.', source: 'Tour records' },
+        { year: '2016', venue: 'Ritz Paris', description: 'Stayed at the Ritz during promotional visits.', source: 'Press reports' },
+        { year: '2024', venue: 'Eiffel Tower', description: 'Performed at the opening ceremony of the Paris Olympics.', source: 'Olympics broadcast records' }
+      ]
+    },
+    {
+      id: 'pharrell-williams',
+      name: 'Pharrell Williams',
+      initials: 'PW',
+      color: '#FFD700',
+      nationality: 'American',
+      era: '2000s - Present',
+      eraRange: '2000s-2020s',
+      categories: ['music', 'fashion'],
+      connections: [
+        { year: '2014', venue: 'Grand Palais', description: 'Performed at Chanel fashion shows hosted by Karl Lagerfeld.', source: 'Fashion press' },
+        { year: '2019', venue: 'Louvre', description: 'Performed at a private Louis Vuitton event inside the museum.', source: 'Fashion press' },
+        { year: '2023', venue: 'Pont Neuf', description: 'Debuted as Louis Vuitton mens creative director with a show on the Pont Neuf.', source: 'Louis Vuitton press' },
+        { year: '2024', venue: 'Palais de Tokyo', description: 'Continued presenting Louis Vuitton collections during Paris Fashion Week.', source: 'Fashion press' }
+      ]
+    },
+    {
+      id: 'naomi-campbell',
+      name: 'Naomi Campbell',
+      initials: 'NC',
+      color: '#8B4513',
+      nationality: 'British',
+      era: '1980s - Present',
+      eraRange: '1980s-2020s',
+      categories: ['fashion'],
+      connections: [
+        { year: '1987', venue: 'Grand Palais', description: 'Walked her first Paris Fashion Week runway as a teenager.', source: 'Fashion press' },
+        { year: '1991', venue: 'Grand Palais', description: 'Opened and closed shows for Chanel and Versace at the height of the supermodel era.', source: 'Fashion press' },
+        { year: '1994', venue: 'Cafe de Flore', description: 'A regular presence in Parisian social life and nightlife.', source: 'Social chronicles' },
+        { year: '2010', venue: 'Hotel de Crillon', description: 'Attended numerous Parisian galas and charity events.', source: 'Press reports' },
+        { year: '2024', venue: 'Grand Palais', description: 'Continued walking Paris runways in her fifth decade of modeling.', source: 'Fashion press' }
+      ]
+    },
+    {
+      id: 'f-scott-fitzgerald',
+      name: 'F. Scott Fitzgerald',
+      initials: 'FSF',
+      color: '#2E8B57',
+      nationality: 'American',
+      era: '1920s - 1930s',
+      eraRange: '1920s-1930s',
+      categories: ['literature'],
+      connections: [
+        { year: '1924', venue: 'Ritz Paris', description: 'Arrived in Paris with Zelda; frequented the Ritz Bar.', source: 'Fitzgerald biographies' },
+        { year: '1925', venue: 'Le Dingo Bar', description: 'Met Hemingway for the first time at this Montparnasse bar.', source: 'A Moveable Feast, Hemingway' },
+        { year: '1925', venue: 'Les Deux Magots', description: 'Frequented Left Bank literary cafes while living in Paris.', source: 'Fitzgerald correspondence' },
+        { year: '1926', venue: 'Ritz Paris', description: 'Continued living extravagantly in Paris during the Jazz Age.', source: 'Fitzgerald biographies' },
+        { year: '1929', venue: 'Shakespeare and Company', description: 'Visited Sylvia Beachs bookshop among the Lost Generation writers.', source: 'Bookshop archives' }
+      ]
+    },
+    {
+      id: 'marie-antoinette',
+      name: 'Marie Antoinette',
+      initials: 'MA',
+      color: '#FFB6C1',
+      nationality: 'Austrian-French',
+      era: '1770s - 1793',
+      eraRange: '1770s-1790s',
+      categories: ['royalty-politics', 'fashion'],
+      connections: [
+        { year: '1770', venue: 'Versailles', description: 'Arrived at Versailles as a 14-year-old Austrian archduchess to marry the future Louis XVI.', source: 'Royal archives' },
+        { year: '1774', venue: 'Versailles', description: 'Became Queen of France; set extravagant fashion trends at court.', source: 'Court records' },
+        { year: '1783', venue: 'Petit Trianon', description: 'Retreated to her private estate within Versailles, the Petit Trianon.', source: 'Royal archives' },
+        { year: '1789', venue: 'Tuileries Palace', description: 'Forced to leave Versailles for the Tuileries Palace during the Revolution.', source: 'Historical records' },
+        { year: '1793', venue: 'Place de la Concorde', description: 'Executed at what was then the Place de la Revolution.', source: 'Historical records' }
+      ]
+    },
+    {
+      id: 'sophia-loren',
+      name: 'Sophia Loren',
+      initials: 'SL',
+      color: '#CD853F',
+      nationality: 'Italian',
+      era: '1950s - 2000s',
+      eraRange: '1950s-2000s',
+      categories: ['film', 'fashion'],
+      connections: [
+        { year: '1958', venue: 'Hotel Plaza Athenee', description: 'Stayed at the palace hotel during Paris visits for film promotions.', source: 'Hotel records' },
+        { year: '1961', venue: 'Hotel de Crillon', description: 'Attended galas celebrating her international film career.', source: 'Press archives' },
+        { year: '1966', venue: 'Grand Palais', description: 'Attended Paris fashion shows and became a couture client.', source: 'Fashion press' },
+        { year: '1976', venue: 'Ritz Paris', description: 'Regular guest at the Ritz during Paris press events.', source: 'Hotel records' }
+      ]
+    },
+    {
+      id: 'alexander-mcqueen',
+      name: 'Alexander McQueen',
+      initials: 'AM',
+      color: '#1C1C1C',
+      nationality: 'British',
+      era: '1990s - 2010',
+      eraRange: '1990s-2010s',
+      categories: ['fashion'],
+      connections: [
+        { year: '1996', venue: 'Grand Palais', description: 'Appointed head designer at Givenchy; showed first Paris collections.', source: 'Givenchy archives' },
+        { year: '1997', venue: 'Grand Palais', description: 'Presented controversial and groundbreaking Givenchy couture shows.', source: 'Fashion press' },
+        { year: '1999', venue: 'Grand Palais', description: 'Continued pushing boundaries with theatrical Paris runway shows.', source: 'Fashion press' },
+        { year: '2003', venue: 'Palais Omnisports de Bercy', description: 'Showed his own label at increasingly spectacular Paris venues.', source: 'Fashion press' }
+      ]
     }
   ];
 
   // ── Venue Database ──────────────────────────────────────────
   var venues = [
-    { id: 'ritz-paris', name: 'Ritz Paris', type: 'Hotel', address: '15 Place Vendome, 1st', arrondissement: 1, lat: 48.8683, lng: 2.3290, prestige: 98, description: 'The undisputed palace of Parisian luxury. Home to Coco Chanel for over 30 years, frequented by Hemingway, Proust, and every generation of celebrity royalty since 1898.', celebrityVisitors: ['Coco Chanel', 'Ernest Hemingway', 'Princess Diana', 'Charlie Chaplin', 'Audrey Hepburn', 'Marcel Proust', 'Elton John'] },
-    { id: 'cafe-de-flore', name: 'Cafe de Flore', type: 'Cafe', address: '172 Boulevard Saint-Germain, 6th', arrondissement: 6, lat: 48.8540, lng: 2.3325, prestige: 92, description: 'The intellectual throne of Saint-Germain-des-Pres. Sartre, de Beauvoir, Picasso, and Karl Lagerfeld all claimed their regular tables.', celebrityVisitors: ['Jean-Paul Sartre', 'Simone de Beauvoir', 'Pablo Picasso', 'Ernest Hemingway', 'Karl Lagerfeld', 'Coco Chanel'] },
-    { id: 'grand-palais', name: 'Grand Palais', type: 'Monument', address: '3 Avenue du General Eisenhower, 8th', arrondissement: 8, lat: 48.8662, lng: 2.3125, prestige: 96, description: 'Chanel\'s iconic runway cathedral and the stage for Paris\'s grandest exhibitions.', celebrityVisitors: ['Karl Lagerfeld', 'Audrey Hepburn', 'Beyonce', 'Zendaya', 'Rihanna', 'Coco Chanel'] },
-    { id: 'the-louvre', name: 'The Louvre', type: 'Museum', address: 'Rue de Rivoli, 1st', arrondissement: 1, lat: 48.8606, lng: 2.3376, prestige: 97, description: 'The world\'s most visited museum. From Napoleon\'s triumphs to Beyonce\'s "Apeshit" video.', celebrityVisitors: ['Beyonce', 'Audrey Hepburn', 'Napoleon Bonaparte'] },
-    { id: 'le-meurice', name: 'Le Meurice', type: 'Hotel', address: '228 Rue de Rivoli, 1st', arrondissement: 1, lat: 48.8650, lng: 2.3280, prestige: 93, description: 'Salvador Dali spent a month here every year for three decades. Palatial hotel blending heritage with celebrity allure.', celebrityVisitors: ['Salvador Dali', 'Beyonce'] },
-    { id: 'les-deux-magots', name: 'Les Deux Magots', type: 'Cafe', address: '6 Place Saint-Germain-des-Pres, 6th', arrondissement: 6, lat: 48.8541, lng: 2.3334, prestige: 88, description: 'Legendary literary cafe where Hemingway met Fitzgerald and existentialism was debated.', celebrityVisitors: ['Ernest Hemingway', 'Jean-Paul Sartre', 'Simone de Beauvoir'] },
-    { id: 'moulin-rouge', name: 'Moulin Rouge', type: 'Theater', address: '82 Boulevard de Clichy, 18th', arrondissement: 18, lat: 48.8841, lng: 2.3322, prestige: 90, description: 'The world\'s most famous cabaret, immortalized in art, film, and popular culture since 1889.', celebrityVisitors: ['Edith Piaf'] },
+    { id: 'ritz-paris', name: 'Ritz Paris', type: 'Hotel', address: '15 Place Vendome, 1st', arrondissement: 1, lat: 48.8683, lng: 2.3290, prestige: 98, description: 'The undisputed palace of Parisian luxury. Home to Coco Chanel for over 30 years, frequented by Hemingway, Proust, and every generation of celebrity royalty since 1898.', celebrityVisitors: ['Coco Chanel', 'Ernest Hemingway', 'Princess Diana', 'Charlie Chaplin', 'Audrey Hepburn', 'Marcel Proust', 'Elton John', 'Marlene Dietrich', 'F. Scott Fitzgerald', 'Sophia Loren', 'Lady Gaga'] },
+    { id: 'cafe-de-flore', name: 'Cafe de Flore', type: 'Cafe', address: '172 Boulevard Saint-Germain, 6th', arrondissement: 6, lat: 48.8540, lng: 2.3325, prestige: 92, description: 'The intellectual throne of Saint-Germain-des-Pres. Sartre, de Beauvoir, Picasso, and Karl Lagerfeld all claimed their regular tables.', celebrityVisitors: ['Jean-Paul Sartre', 'Simone de Beauvoir', 'Pablo Picasso', 'Ernest Hemingway', 'Karl Lagerfeld', 'Coco Chanel', 'Duke Ellington', 'Juliette Greco', 'Jean Seberg', 'James Baldwin', 'Jane Birkin', 'Naomi Campbell'] },
+    { id: 'grand-palais', name: 'Grand Palais', type: 'Monument', address: '3 Avenue du General Eisenhower, 8th', arrondissement: 8, lat: 48.8662, lng: 2.3125, prestige: 96, description: 'Chanel\'s iconic runway cathedral and the stage for Paris\'s grandest exhibitions.', celebrityVisitors: ['Karl Lagerfeld', 'Audrey Hepburn', 'Beyonce', 'Zendaya', 'Rihanna', 'Coco Chanel', 'Henri Matisse', 'Grace Kelly', 'Kanye West', 'Kim Kardashian', 'Lady Gaga', 'Pharrell Williams', 'Naomi Campbell', 'Sophia Loren', 'Alexander McQueen'] },
+    { id: 'the-louvre', name: 'The Louvre', type: 'Museum', address: 'Rue de Rivoli, 1st', arrondissement: 1, lat: 48.8606, lng: 2.3376, prestige: 97, description: 'The world\'s most visited museum. From Napoleon\'s triumphs to Beyonce\'s "Apeshit" video.', celebrityVisitors: ['Beyonce', 'Audrey Hepburn', 'Napoleon Bonaparte', 'Claude Monet', 'Edgar Degas', 'Pharrell Williams'] },
+    { id: 'le-meurice', name: 'Le Meurice', type: 'Hotel', address: '228 Rue de Rivoli, 1st', arrondissement: 1, lat: 48.8650, lng: 2.3280, prestige: 93, description: 'Salvador Dali spent a month here every year for three decades. Palatial hotel blending heritage with celebrity allure.', celebrityVisitors: ['Salvador Dali', 'Beyonce', 'Kanye West'] },
+    { id: 'les-deux-magots', name: 'Les Deux Magots', type: 'Cafe', address: '6 Place Saint-Germain-des-Pres, 6th', arrondissement: 6, lat: 48.8541, lng: 2.3334, prestige: 88, description: 'Legendary literary cafe where Hemingway met Fitzgerald and existentialism was debated.', celebrityVisitors: ['Ernest Hemingway', 'Jean-Paul Sartre', 'Simone de Beauvoir', 'James Baldwin', 'F. Scott Fitzgerald'] },
+    { id: 'moulin-rouge', name: 'Moulin Rouge', type: 'Theater', address: '82 Boulevard de Clichy, 18th', arrondissement: 18, lat: 48.8841, lng: 2.3322, prestige: 90, description: 'The world\'s most famous cabaret, immortalized in art, film, and popular culture since 1889.', celebrityVisitors: ['Edith Piaf', 'Henri de Toulouse-Lautrec', 'Duke Ellington'] },
     { id: 'pere-lachaise', name: 'Pere Lachaise Cemetery', type: 'Cemetery', address: '16 Rue du Repos, 20th', arrondissement: 20, lat: 48.8614, lng: 2.3936, prestige: 88, description: 'The most visited cemetery in the world. Final resting place of Jim Morrison, Oscar Wilde, Edith Piaf, and Frederic Chopin.', celebrityVisitors: ['Jim Morrison', 'Oscar Wilde', 'Edith Piaf', 'Frederic Chopin', 'Marcel Proust'] },
-    { id: 'shakespeare-and-company', name: 'Shakespeare and Company', type: 'Cafe', address: '37 Rue de la Bucherie, 5th', arrondissement: 5, lat: 48.8526, lng: 2.3471, prestige: 85, description: 'The legendary Left Bank bookshop, gathering place for the Lost Generation and literary pilgrims ever since.', celebrityVisitors: ['Ernest Hemingway', 'Gertrude Stein', 'Jim Morrison'] },
-    { id: 'hotel-plaza-athenee', name: 'Hotel Plaza Athenee', type: 'Hotel', address: '25 Avenue Montaigne, 8th', arrondissement: 8, lat: 48.8662, lng: 2.3039, prestige: 94, description: 'Avenue Montaigne palace hotel, neighbor to Dior and the couture houses.', celebrityVisitors: ['Audrey Hepburn', 'Christian Dior'] },
-    { id: 'palais-de-tokyo', name: 'Palais de Tokyo', type: 'Museum', address: '13 Avenue du President Wilson, 16th', arrondissement: 16, lat: 48.8640, lng: 2.2973, prestige: 82, description: 'Contemporary art center and fashion show venue. Regular host for Paris Fashion Week events.', celebrityVisitors: ['Beyonce', 'Zendaya', 'Rihanna', 'Coco Chanel'] },
-    { id: 'olympia', name: 'Olympia', type: 'Theater', address: '28 Boulevard des Capucines, 9th', arrondissement: 9, lat: 48.8707, lng: 2.3299, prestige: 87, description: 'Legendary music hall where Edith Piaf, Josephine Baker, and generations of performers have played.', celebrityVisitors: ['Edith Piaf', 'Josephine Baker', 'Elton John'] },
-    { id: 'hotel-de-crillon', name: 'Hotel de Crillon', type: 'Hotel', address: '10 Place de la Concorde, 8th', arrondissement: 8, lat: 48.8676, lng: 2.3218, prestige: 95, description: 'Place de la Concorde palace hotel. A diplomatic and celebrity landmark for over two centuries.', celebrityVisitors: ['Princess Diana', 'Beyonce', 'Zendaya', 'Josephine Baker', 'Coco Chanel'] },
+    { id: 'shakespeare-and-company', name: 'Shakespeare and Company', type: 'Cafe', address: '37 Rue de la Bucherie, 5th', arrondissement: 5, lat: 48.8526, lng: 2.3471, prestige: 85, description: 'The legendary Left Bank bookshop, gathering place for the Lost Generation and literary pilgrims ever since.', celebrityVisitors: ['Ernest Hemingway', 'Gertrude Stein', 'Jim Morrison', 'F. Scott Fitzgerald'] },
+    { id: 'hotel-plaza-athenee', name: 'Hotel Plaza Athenee', type: 'Hotel', address: '25 Avenue Montaigne, 8th', arrondissement: 8, lat: 48.8662, lng: 2.3039, prestige: 94, description: 'Avenue Montaigne palace hotel, neighbor to Dior and the couture houses.', celebrityVisitors: ['Audrey Hepburn', 'Christian Dior', 'Marlene Dietrich', 'Grace Kelly', 'Sophia Loren'] },
+    { id: 'palais-de-tokyo', name: 'Palais de Tokyo', type: 'Museum', address: '13 Avenue du President Wilson, 16th', arrondissement: 16, lat: 48.8640, lng: 2.2973, prestige: 82, description: 'Contemporary art center and fashion show venue. Regular host for Paris Fashion Week events.', celebrityVisitors: ['Beyonce', 'Zendaya', 'Rihanna', 'Coco Chanel', 'Kanye West', 'Pharrell Williams'] },
+    { id: 'olympia', name: 'Olympia', type: 'Theater', address: '28 Boulevard des Capucines, 9th', arrondissement: 9, lat: 48.8707, lng: 2.3299, prestige: 87, description: 'Legendary music hall where Edith Piaf, Josephine Baker, and generations of performers have played.', celebrityVisitors: ['Edith Piaf', 'Josephine Baker', 'Elton John', 'Marlene Dietrich', 'Duke Ellington', 'Miles Davis', 'Juliette Greco', 'Serge Gainsbourg'] },
+    { id: 'hotel-de-crillon', name: 'Hotel de Crillon', type: 'Hotel', address: '10 Place de la Concorde, 8th', arrondissement: 8, lat: 48.8676, lng: 2.3218, prestige: 95, description: 'Place de la Concorde palace hotel. A diplomatic and celebrity landmark for over two centuries.', celebrityVisitors: ['Princess Diana', 'Beyonce', 'Zendaya', 'Josephine Baker', 'Coco Chanel', 'Sophia Loren', 'Naomi Campbell'] },
     { id: 'centre-pompidou', name: 'Centre Pompidou', type: 'Museum', address: 'Place Georges-Pompidou, 4th', arrondissement: 4, lat: 48.8607, lng: 2.3522, prestige: 89, description: 'The radical modernist museum of contemporary art, hosting major exhibitions and celebrity cultural events.', celebrityVisitors: ['Salvador Dali'] },
-    { id: 'versailles', name: 'Palace of Versailles', type: 'Monument', address: 'Place dArmes, Versailles', arrondissement: 0, lat: 48.8049, lng: 2.1204, prestige: 97, description: 'The ultimate expression of French royal power and luxury, now a museum and event venue.', celebrityVisitors: ['Princess Diana', 'Rihanna', 'Christian Dior', 'Elton John'] },
+    { id: 'versailles', name: 'Palace of Versailles', type: 'Monument', address: 'Place dArmes, Versailles', arrondissement: 0, lat: 48.8049, lng: 2.1204, prestige: 97, description: 'The ultimate expression of French royal power and luxury, now a museum and event venue.', celebrityVisitors: ['Princess Diana', 'Rihanna', 'Christian Dior', 'Elton John', 'Grace Kelly', 'Kanye West', 'Kim Kardashian', 'Marie Antoinette'] },
     { id: 'les-invalides', name: 'Les Invalides', type: 'Monument', address: '129 Rue de Grenelle, 7th', arrondissement: 7, lat: 48.8567, lng: 2.3125, prestige: 91, description: 'Military complex housing Napoleon\'s tomb, a monument to French power and history.', celebrityVisitors: ['Napoleon Bonaparte'] },
-    { id: 'eiffel-tower', name: 'Eiffel Tower', type: 'Monument', address: 'Champ de Mars, 7th', arrondissement: 7, lat: 48.8584, lng: 2.2945, prestige: 99, description: 'The most iconic landmark in the world. Featured in hundreds of films and countless celebrity moments.', celebrityVisitors: ['Audrey Hepburn', 'Gene Kelly'] },
+    { id: 'eiffel-tower', name: 'Eiffel Tower', type: 'Monument', address: 'Champ de Mars, 7th', arrondissement: 7, lat: 48.8584, lng: 2.2945, prestige: 99, description: 'The most iconic landmark in the world. Featured in hundreds of films and countless celebrity moments.', celebrityVisitors: ['Audrey Hepburn', 'Gene Kelly', 'Lady Gaga'] },
     { id: 'le-grand-rex', name: 'Le Grand Rex', type: 'Theater', address: '1 Boulevard Poissonniere, 2nd', arrondissement: 2, lat: 48.8710, lng: 2.3478, prestige: 85, description: 'Europe\'s largest cinema auditorium, a 1932 Art Deco landmark on the Grands Boulevards.', celebrityVisitors: ['Jean-Paul Belmondo'] },
-    { id: 'theatre-des-champs-elysees', name: 'Theatre des Champs-Elysees', type: 'Theater', address: '15 Avenue Montaigne, 8th', arrondissement: 8, lat: 48.8653, lng: 2.3044, prestige: 90, description: 'Art Deco theater where Josephine Baker debuted and Coco Chanel designed for the Ballets Russes.', celebrityVisitors: ['Josephine Baker', 'Coco Chanel', 'Charlie Chaplin'] },
+    { id: 'theatre-des-champs-elysees', name: 'Theatre des Champs-Elysees', type: 'Theater', address: '15 Avenue Montaigne, 8th', arrondissement: 8, lat: 48.8653, lng: 2.3044, prestige: 90, description: 'Art Deco theater where Josephine Baker debuted and Coco Chanel designed for the Ballets Russes.', celebrityVisitors: ['Josephine Baker', 'Coco Chanel', 'Charlie Chaplin', 'Duke Ellington'] },
     { id: 'cinematheque-francaise', name: 'Cinematheque Francaise', type: 'Theater', address: '51 Rue de Bercy, 12th', arrondissement: 12, lat: 48.8365, lng: 2.3820, prestige: 84, description: 'The temple of cinephilia in Bercy, hosting retrospectives and arthouse premieres.', celebrityVisitors: ['Charlie Chaplin', 'Timothee Chalamet'] },
     { id: 'folies-bergere', name: 'Folies Bergere', type: 'Theater', address: '32 Rue Richer, 9th', arrondissement: 9, lat: 48.8745, lng: 2.3440, prestige: 86, description: 'Legendary music hall where Josephine Baker performed her legendary banana dance.', celebrityVisitors: ['Josephine Baker'] },
-    { id: 'salle-pleyel', name: 'Salle Pleyel', type: 'Theater', address: '252 Rue du Faubourg Saint-Honore, 8th', arrondissement: 8, lat: 48.8766, lng: 2.3003, prestige: 88, description: 'Storied concert hall and host of the Cesar Awards ceremony.', celebrityVisitors: ['Frederic Chopin'] },
+    { id: 'salle-pleyel', name: 'Salle Pleyel', type: 'Theater', address: '252 Rue du Faubourg Saint-Honore, 8th', arrondissement: 8, lat: 48.8766, lng: 2.3003, prestige: 88, description: 'Storied concert hall and host of the Cesar Awards ceremony.', celebrityVisitors: ['Frederic Chopin', 'Duke Ellington', 'Miles Davis'] },
     { id: 'arc-de-triomphe', name: 'Arc de Triomphe', type: 'Monument', address: 'Place Charles de Gaulle, 8th', arrondissement: 8, lat: 48.8738, lng: 2.2950, prestige: 95, description: 'Commissioned by Napoleon, the Arc de Triomphe is one of Paris\'s most recognizable monuments.', celebrityVisitors: ['Napoleon Bonaparte'] },
-    { id: 'notre-dame', name: 'Notre-Dame Cathedral', type: 'Monument', address: '6 Parvis Notre-Dame, 4th', arrondissement: 4, lat: 48.8530, lng: 2.3499, prestige: 96, description: 'Gothic masterpiece where Napoleon crowned himself Emperor, now undergoing historic restoration.', celebrityVisitors: ['Napoleon Bonaparte'] },
-    { id: 'pantheon', name: 'Pantheon', type: 'Monument', address: 'Place du Pantheon, 5th', arrondissement: 5, lat: 48.8462, lng: 2.3461, prestige: 93, description: 'France\'s secular temple honoring its greatest citizens, including Josephine Baker.', celebrityVisitors: ['Josephine Baker'] },
+    { id: 'notre-dame', name: 'Notre-Dame Cathedral', type: 'Monument', address: '6 Parvis Notre-Dame, 4th', arrondissement: 4, lat: 48.8530, lng: 2.3499, prestige: 96, description: 'Gothic masterpiece where Napoleon crowned himself Emperor, now undergoing historic restoration.', celebrityVisitors: ['Napoleon Bonaparte', 'Victor Hugo', 'Empress Josephine', 'Marie Antoinette'] },
+    { id: 'pantheon', name: 'Pantheon', type: 'Monument', address: 'Place du Pantheon, 5th', arrondissement: 5, lat: 48.8462, lng: 2.3461, prestige: 93, description: 'France\'s secular temple honoring its greatest citizens, including Josephine Baker.', celebrityVisitors: ['Josephine Baker', 'Victor Hugo'] },
     { id: 'musee-rodin', name: 'Musee Rodin', type: 'Museum', address: '77 Rue de Varenne, 7th', arrondissement: 7, lat: 48.8554, lng: 2.3159, prestige: 86, description: 'Beautiful museum and garden featured in Midnight in Paris and fashion events.', celebrityVisitors: [] },
     { id: 'pont-alexandre-iii', name: 'Pont Alexandre III', type: 'Monument', address: 'Pont Alexandre III, 7th/8th', arrondissement: 7, lat: 48.8637, lng: 2.3136, prestige: 88, description: 'The most ornate bridge in Paris, featured in Midnight in Paris and countless fashion shoots.', celebrityVisitors: [] },
     { id: 'maxims', name: "Maxim's", type: 'Restaurant', address: '3 Rue Royale, 8th', arrondissement: 8, lat: 48.8671, lng: 2.3236, prestige: 87, description: 'Belle Epoque restaurant synonymous with Parisian luxury dining and celebrity patronage.', celebrityVisitors: ['Coco Chanel'] },
     { id: 'la-closerie-des-lilas', name: 'La Closerie des Lilas', type: 'Restaurant', address: '171 Boulevard du Montparnasse, 6th', arrondissement: 6, lat: 48.8434, lng: 2.3372, prestige: 84, description: 'Hemingway\'s favorite writing cafe where he completed The Sun Also Rises.', celebrityVisitors: ['Ernest Hemingway'] },
-    { id: 'brasserie-lipp', name: 'Brasserie Lipp', type: 'Restaurant', address: '151 Boulevard Saint-Germain, 6th', arrondissement: 6, lat: 48.8540, lng: 2.3340, prestige: 83, description: 'Iconic Saint-Germain brasserie frequented by literary and political figures.', celebrityVisitors: ['Ernest Hemingway'] }
+    { id: 'brasserie-lipp', name: 'Brasserie Lipp', type: 'Restaurant', address: '151 Boulevard Saint-Germain, 6th', arrondissement: 6, lat: 48.8540, lng: 2.3340, prestige: 83, description: 'Iconic Saint-Germain brasserie frequented by literary and political figures.', celebrityVisitors: ['Ernest Hemingway'] },
+    { id: 'montparnasse-cemetery', name: 'Montparnasse Cemetery', type: 'Cemetery', address: '3 Boulevard Edgar Quinet, 14th', arrondissement: 14, lat: 48.8389, lng: 2.3263, prestige: 82, description: 'The Left Bank resting place of Sartre, Beauvoir, Gainsbourg, and Man Ray — a literary and artistic counterpart to Pere Lachaise.', celebrityVisitors: ['Jean-Paul Sartre', 'Simone de Beauvoir', 'Serge Gainsbourg', 'Man Ray'] },
+    { id: 'opera-garnier', name: 'Opera Garnier', type: 'Theater', address: '8 Rue Scribe, 9th', arrondissement: 9, lat: 48.8720, lng: 2.3316, prestige: 94, description: 'The ornate 1875 opera house, inspiration for The Phantom of the Opera and home to Degas\'s dancer paintings.', celebrityVisitors: ['Edgar Degas'] },
+    { id: 'musee-de-lorangerie', name: 'Musee de lOrangerie', type: 'Museum', address: 'Jardin des Tuileries, 1st', arrondissement: 1, lat: 48.8638, lng: 2.3226, prestige: 88, description: 'Home to Monet\'s immersive Water Lilies murals, donated by the artist to the French state.', celebrityVisitors: ['Claude Monet'] },
+    { id: 'pont-neuf', name: 'Pont Neuf', type: 'Monument', address: 'Pont Neuf, 1st', arrondissement: 1, lat: 48.8568, lng: 2.3413, prestige: 86, description: 'The oldest standing bridge in Paris, used by Pharrell Williams for his debut Louis Vuitton show.', celebrityVisitors: ['Pharrell Williams'] },
+    { id: 'place-des-vosges', name: 'Place des Vosges', type: 'Monument', address: 'Place des Vosges, 4th', arrondissement: 4, lat: 48.8556, lng: 2.3655, prestige: 87, description: 'Paris\'s oldest planned square and home of the Victor Hugo museum at number 6.', celebrityVisitors: ['Victor Hugo'] }
   ];
 
   // ── FAQ Data (for homepage) ─────────────────────────────────
