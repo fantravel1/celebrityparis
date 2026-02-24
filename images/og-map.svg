@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1A1A2E"/>
+  <!-- Top gold accent line -->
+  <rect x="100" y="80" width="1000" height="3" fill="#D4AF37"/>
+  <!-- Bottom gold accent line -->
+  <rect x="100" y="550" width="1000" height="3" fill="#D4AF37"/>
+  <!-- Decorative gold corner elements -->
+  <rect x="80" y="60" width="40" height="3" fill="#D4AF37"/>
+  <rect x="80" y="60" width="3" height="40" fill="#D4AF37"/>
+  <rect x="1080" y="60" width="40" height="3" fill="#D4AF37"/>
+  <rect x="1117" y="60" width="3" height="40" fill="#D4AF37"/>
+  <rect x="80" y="570" width="40" height="3" fill="#D4AF37"/>
+  <rect x="80" y="533" width="3" height="40" fill="#D4AF37"/>
+  <rect x="1080" y="570" width="40" height="3" fill="#D4AF37"/>
+  <rect x="1117" y="533" width="3" height="40" fill="#D4AF37"/>
+  <!-- Map pin icons -->
+  <g opacity="0.3" fill="#D4AF37">
+    <path d="M400,190 C400,175 415,165 425,175 C435,165 450,175 450,190 C450,205 425,225 425,225 C425,225 400,205 400,190 Z"/>
+    <circle cx="425" cy="188" r="5" fill="#1A1A2E"/>
+  </g>
+  <g opacity="0.25" fill="#D4AF37">
+    <path d="M740,170 C740,155 755,145 765,155 C775,145 790,155 790,170 C790,185 765,205 765,205 C765,205 740,185 740,170 Z"/>
+    <circle cx="765" cy="168" r="5" fill="#1A1A2E"/>
+  </g>
+  <g opacity="0.2" fill="#D4AF37">
+    <path d="M570,195 C570,180 585,170 595,180 C605,170 620,180 620,195 C620,210 595,230 595,230 C595,230 570,210 570,195 Z"/>
+    <circle cx="595" cy="193" r="5" fill="#1A1A2E"/>
+  </g>
+  <!-- Title -->
+  <text x="600" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#FFFFFF">Celebrity Map of Paris</text>
+  <!-- Decorative gold divider -->
+  <rect x="400" y="340" width="400" height="2" fill="#D4AF37"/>
+  <circle cx="600" cy="341" r="5" fill="#D4AF37"/>
+  <circle cx="500" cy="341" r="3" fill="#D4AF37"/>
+  <circle cx="700" cy="341" r="3" fill="#D4AF37"/>
+  <!-- Subtitle -->
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#B8B8CC">Every Venue. Every Story.</text>
+  <!-- Bottom branding -->
+  <text x="600" y="510" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#D4AF37">CelebrityParis.com</text>
+</svg>
