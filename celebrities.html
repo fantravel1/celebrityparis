@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Directory - Search How Celebrities Experienced Paris | CelebrityParis.com</title>
+    <meta name="description" content="Search 50+ celebrities and discover how they experienced Paris — from literary cafes to fashion front rows, film premieres to luxury hotels. The definitive celebrity Paris directory.">
+    <meta name="keywords" content="celebrities in Paris, celebrity Paris guide, famous people Paris, Paris fashion week celebrities, celebrity Paris map">
+    <link rel="canonical" href="https://celebrityparis.com/celebrities.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Celebrity Directory - Search How Celebrities Experienced Paris">
+    <meta property="og:description" content="Search 50+ celebrities and discover how they experienced Paris — from literary cafes to fashion front rows, film premieres to luxury hotels.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celebrityparis.com/celebrities.html">
+    <meta property="og:site_name" content="CelebrityParis.com">
+    <meta property="og:image" content="https://celebrityparis.com/images/og-celebrities.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Celebrity Directory - Search How Celebrities Experienced Paris">
+    <meta name="twitter:description" content="Search 50+ celebrities and discover how they experienced Paris — from literary cafes to fashion front rows.">
+    <meta name="twitter:image" content="https://celebrityparis.com/images/og-celebrities.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JSON-LD: WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Celebrity Directory - Search How Celebrities Experienced Paris",
+        "description": "Search 50+ celebrities and discover how they experienced Paris — from literary cafes to fashion front rows, film premieres to luxury hotels.",
+        "url": "https://celebrityparis.com/celebrities.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "CelebrityParis.com",
+            "url": "https://celebrityparis.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "CelebrityParis.com",
+            "url": "https://celebrityparis.com"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://celebrityparis.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Celebrity Directory",
+                "item": "https://celebrityparis.com/celebrities.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: ItemList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Celebrities Who Experienced Paris",
+        "description": "A curated directory of iconic celebrities and their documented connections to Paris.",
+        "numberOfItems": 50,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Audrey Hepburn",
+                "url": "https://celebrityparis.com/celebrities.html#audrey-hepburn"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Ernest Hemingway",
+                "url": "https://celebrityparis.com/celebrities.html#ernest-hemingway"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Coco Chanel",
+                "url": "https://celebrityparis.com/celebrities.html#coco-chanel"
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Which celebrities have lived in Paris?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Many iconic figures have called Paris home, including Ernest Hemingway, Josephine Baker, Coco Chanel, Pablo Picasso, Jim Morrison, Oscar Wilde, Gertrude Stein, and more recently, Johnny Depp and Natalie Portman. Paris has long attracted artists, writers, musicians, and filmmakers from around the world."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What celebrities attend Paris Fashion Week?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Paris Fashion Week draws global A-list celebrities including Beyonce, Rihanna, Zendaya, Timothee Chalamet, Lupita Nyong'o, and many more. Front rows at houses like Dior, Chanel, Louis Vuitton, and Saint Laurent regularly feature film stars, musicians, and cultural icons."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which celebrities are buried at Pere Lachaise Cemetery?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pere Lachaise Cemetery in Paris is the final resting place of many famous figures including Jim Morrison (The Doors), Oscar Wilde, Edith Piaf, Frederic Chopin, Marcel Proust, Moliere, and Isadora Duncan. It is one of the most visited cemeteries in the world."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What movies were filmed in Paris?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hundreds of iconic films have been shot in Paris, including Midnight in Paris, Amelie, The Bourne Identity, Before Sunset, An American in Paris, Funny Face starring Audrey Hepburn, Inception, The Da Vinci Code, and Mission: Impossible - Fallout. The city's architecture and atmosphere make it one of the most filmed cities in the world."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which celebrities have stayed at the Ritz Paris?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Ritz Paris has hosted countless legendary guests including Coco Chanel (who lived there for over 30 years), Ernest Hemingway, Marcel Proust, Princess Diana, Charlie Chaplin, Audrey Hepburn, and many modern-day celebrities. The hotel's Bar Hemingway is named after the famous author who helped 'liberate' it during WWII."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header class="site-header" role="banner">
+        <nav class="main-nav" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo" aria-label="CelebrityParis.com home">
+                    <span class="logo-text">Celebrity<em>Paris</em></span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem" class="nav-link">Home</a></li>
+                    <li role="none"><a href="celebrities.html" role="menuitem" class="nav-link active" aria-current="page">Celebrities</a></li>
+                    <li role="none"><a href="venues.html" role="menuitem" class="nav-link">Venues</a></li>
+                    <li role="none"><a href="map.html" role="menuitem" class="nav-link">Paris Map</a></li>
+                    <li role="none"><a href="fashion.html" role="menuitem" class="nav-link">Fashion</a></li>
+                    <li role="none"><a href="timeline.html" role="menuitem" class="nav-link">Timeline</a></li>
+                    <li role="none"><a href="about.html" role="menuitem" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ============ HERO / SEARCH SECTION ============ -->
+        <section class="hero hero--compact" aria-labelledby="hero-heading">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Celebrity Directory</li>
+                    </ol>
+                </nav>
+                <h1 id="hero-heading" class="hero-title animate-on-scroll">Search Your Favorite Celebrity</h1>
+                <p class="hero-subtitle animate-on-scroll">Discover how the world's most iconic figures experienced Paris — from literary cafes to fashion front rows</p>
+
+                <div class="search-wrapper animate-on-scroll">
+                    <label for="celebritySearch" class="sr-only">Search celebrities</label>
+                    <div class="search-input-group">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input
+                            type="search"
+                            id="celebritySearch"
+                            class="search-input"
+                            placeholder="Type a celebrity name... (e.g., Audrey Hepburn, Beyonce, Hemingway)"
+                            autocomplete="off"
+                            aria-label="Search celebrities by name"
+                            aria-describedby="searchHint"
+                            aria-controls="celebritySearchResults"
+                        >
+                        <span id="searchHint" class="sr-only">Results will appear as you type</span>
+                    </div>
+                    <div id="celebritySearchResults" class="search-results" role="listbox" aria-label="Search suggestions" hidden></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FILTER BAR ============ -->
+        <section class="filter-section" aria-label="Filter celebrities" id="celebrityFilters">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="filter-group" role="group" aria-label="Category filters">
+                        <span class="filter-label">Category:</span>
+                        <div class="filter-pills" role="radiogroup" aria-label="Filter by category">
+                            <button class="filter-pill active" data-category="all" role="radio" aria-checked="true">All</button>
+                            <button class="filter-pill" data-category="film" role="radio" aria-checked="false">Film</button>
+                            <button class="filter-pill" data-category="fashion" role="radio" aria-checked="false">Fashion</button>
+                            <button class="filter-pill" data-category="music" role="radio" aria-checked="false">Music</button>
+                            <button class="filter-pill" data-category="art" role="radio" aria-checked="false">Art</button>
+                            <button class="filter-pill" data-category="literature" role="radio" aria-checked="false">Literature</button>
+                            <button class="filter-pill" data-category="royalty-politics" role="radio" aria-checked="false">Royalty / Politics</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-dropdowns">
+                        <div class="filter-group">
+                            <label for="eraFilter" class="filter-label">Era:</label>
+                            <select id="eraFilter" class="filter-select" aria-label="Filter by era">
+                                <option value="all">All Eras</option>
+                                <option value="1900s-1920s">1900s - 1920s</option>
+                                <option value="1930s-1950s">1930s - 1950s</option>
+                                <option value="1960s-1980s">1960s - 1980s</option>
+                                <option value="1990s-2000s">1990s - 2000s</option>
+                                <option value="2010s-2020s">2010s - 2020s</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="sortOrder" class="filter-label">Sort:</label>
+                            <select id="sortOrder" class="filter-select" aria-label="Sort celebrities">
+                                <option value="featured">Featured</option>
+                                <option value="a-z">A - Z</option>
+                                <option value="z-a">Z - A</option>
+                                <option value="connections">Most Paris Connections</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-status">
+                    <p class="results-count" id="resultsCount" aria-live="polite" role="status">
+                        Showing <strong>50</strong> celebrities
+                    </p>
+                    <div class="active-filters" id="activeFilters" aria-label="Active filters"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CELEBRITY GRID ============ -->
+        <section class="celebrity-grid-section" aria-labelledby="grid-heading">
+            <div class="container">
+                <h2 id="grid-heading" class="sr-only">Celebrity Results</h2>
+
+                <div class="celebrity-grid" id="celebrityGrid" role="list">
+                    <!-- JS populates cards. Example card structure for reference: -->
+                    <article class="celebrity-card animate-on-scroll" data-id="audrey-hepburn" data-categories="film,fashion" data-era="1950s-1980s" role="listitem" tabindex="0" aria-label="Audrey Hepburn - Film, Fashion">
+                        <div class="celebrity-avatar" style="background-color: #8B5E83;">
+                            <span class="avatar-initials">AH</span>
+                        </div>
+                        <div class="celebrity-info">
+                            <h3 class="celebrity-name">Audrey Hepburn</h3>
+                            <p class="celebrity-era">1930s - 1980s &middot; British-Belgian</p>
+                            <div class="celebrity-categories">
+                                <span class="badge badge-film">Film</span>
+                                <span class="badge badge-fashion">Fashion</span>
+                            </div>
+                            <p class="celebrity-connections">8 Paris connections</p>
+                        </div>
+                    </article>
+
+                    <article class="celebrity-card animate-on-scroll" data-id="ernest-hemingway" data-categories="literature" data-era="1920s-1960s" role="listitem" tabindex="0" aria-label="Ernest Hemingway - Literature">
+                        <div class="celebrity-avatar" style="background-color: #4A6741;">
+                            <span class="avatar-initials">EH</span>
+                        </div>
+                        <div class="celebrity-info">
+                            <h3 class="celebrity-name">Ernest Hemingway</h3>
+                            <p class="celebrity-era">1920s - 1960s &middot; American</p>
+                            <div class="celebrity-categories">
+                                <span class="badge badge-literature">Literature</span>
+                            </div>
+                            <p class="celebrity-connections">12 Paris connections</p>
+                        </div>
+                    </article>
+
+                    <article class="celebrity-card animate-on-scroll" data-id="coco-chanel" data-categories="fashion" data-era="1910s-1970s" role="listitem" tabindex="0" aria-label="Coco Chanel - Fashion">
+                        <div class="celebrity-avatar" style="background-color: #2C2C2C;">
+                            <span class="avatar-initials">CC</span>
+                        </div>
+                        <div class="celebrity-info">
+                            <h3 class="celebrity-name">Coco Chanel</h3>
+                            <p class="celebrity-era">1910s - 1970s &middot; French</p>
+                            <div class="celebrity-categories">
+                                <span class="badge badge-fashion">Fashion</span>
+                            </div>
+                            <p class="celebrity-connections">15 Paris connections</p>
+                        </div>
+                    </article>
+                    <!-- Additional cards generated by JS from data.js -->
+                </div>
+
+                <!-- No Results State -->
+                <div class="no-results" id="noResults" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="8" y1="8" x2="14" y2="14"></line>
+                        <line x1="14" y1="8" x2="8" y2="14"></line>
+                    </svg>
+                    <h3>No celebrities found</h3>
+                    <p>Try adjusting your search or filters. You can also <button class="link-button" id="clearAllFilters" aria-label="Clear all filters">clear all filters</button> to start over.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CELEBRITY DETAIL MODAL ============ -->
+        <div class="modal-overlay" id="celebrityModal" role="dialog" aria-modal="true" aria-labelledby="modalCelebName" hidden>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close celebrity profile">&times;</button>
+                <div class="celebrity-profile" id="celebrityProfile">
+                    <!--
+                    Profile template (populated by JS):
+
+                    <div class="profile-header">
+                        <div class="profile-avatar" style="background-color: {color};">
+                            <span class="avatar-initials avatar-initials--large">{initials}</span>
+                        </div>
+                        <div class="profile-heading">
+                            <h2 id="modalCelebName" class="profile-name">{name}</h2>
+                            <p class="profile-meta">{era} &middot; {nationality}</p>
+                            <div class="profile-badges">
+                                <span class="badge badge-{category}">{category}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <blockquote class="profile-quote" *if quote exists*>
+                        <p>"{quote}"</p>
+                        <cite>&mdash; {name}</cite>
+                    </blockquote>
+
+                    <section class="profile-connections">
+                        <h3>Paris Connections</h3>
+                        <ul class="connections-list">
+                            <li class="connection-item">
+                                <span class="connection-year">{year}</span>
+                                <div class="connection-detail">
+                                    <strong class="connection-venue">{venue name}</strong>
+                                    <p class="connection-description">{description}</p>
+                                    <cite class="connection-source">Source: {source}</cite>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="profile-map">
+                        <h3>Map of Paris Connections</h3>
+                        <div id="profileMap" class="profile-map-container"></div>
+                    </section>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ STATS SECTION ============ -->
+        <section class="stats-section" aria-labelledby="stats-heading">
+            <div class="container">
+                <h2 id="stats-heading" class="section-title animate-on-scroll">The Directory at a Glance</h2>
+                <div class="stats-grid">
+                    <div class="stat-card animate-on-scroll">
+                        <span class="stat-number" id="statTotalCelebs">50+</span>
+                        <span class="stat-label">Celebrities Documented</span>
+                    </div>
+                    <div class="stat-card animate-on-scroll">
+                        <span class="stat-number" id="statCategories">7</span>
+                        <span class="stat-label">Categories</span>
+                        <span class="stat-detail">Film, Fashion, Music, Art, Literature, Royalty, Politics</span>
+                    </div>
+                    <div class="stat-card animate-on-scroll">
+                        <span class="stat-number" id="statEras">12</span>
+                        <span class="stat-label">Decades Covered</span>
+                        <span class="stat-detail">1900s through 2020s</span>
+                    </div>
+                    <div class="stat-card stat-card--highlight animate-on-scroll">
+                        <span class="stat-eyebrow">Most Connected</span>
+                        <span class="stat-number" id="statMostConnected">Coco Chanel</span>
+                        <span class="stat-label">15 Paris Connections</span>
+                        <span class="stat-detail">Fashion icon who lived at the Ritz Paris for over 30 years</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ / AEO SECTION ============ -->
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="section-title animate-on-scroll">Common Questions About Celebrities in Paris</h2>
+                <div class="faq-accordion" id="celebrityFAQ" role="list">
+
+                    <details class="faq-item animate-on-scroll" role="listitem">
+                        <summary class="faq-question" aria-label="Which celebrities have lived in Paris?">
+                            <span>Which celebrities have lived in Paris?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Many iconic figures have called Paris home. <strong>Ernest Hemingway</strong> lived in the Latin Quarter during the 1920s and wrote about it in <em>A Moveable Feast</em>. <strong>Josephine Baker</strong> became one of France's most celebrated performers after moving from the United States in 1925. <strong>Coco Chanel</strong> lived at the Ritz Paris for over 30 years. <strong>Jim Morrison</strong> spent his final years in the Marais. Other notable Parisian residents include Oscar Wilde, Gertrude Stein, Pablo Picasso, and more recently, Johnny Depp and Natalie Portman.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item animate-on-scroll" role="listitem">
+                        <summary class="faq-question" aria-label="What celebrities attend Paris Fashion Week?">
+                            <span>What celebrities attend Paris Fashion Week?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Paris Fashion Week is the pinnacle of the global fashion calendar and draws the biggest names in entertainment. Regular front-row attendees include <strong>Beyonce</strong>, <strong>Rihanna</strong>, <strong>Zendaya</strong>, <strong>Timothee Chalamet</strong>, and <strong>Lupita Nyong'o</strong>. Houses like Dior, Chanel, Louis Vuitton, and Saint Laurent host shows that attract film stars, musicians, and cultural icons from around the world. Fashion Week occurs twice a year for ready-to-wear (February/March and September/October) and twice for Haute Couture (January and July).</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item animate-on-scroll" role="listitem">
+                        <summary class="faq-question" aria-label="Which celebrities are buried at Pere Lachaise Cemetery?">
+                            <span>Which celebrities are buried at Pere Lachaise Cemetery?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Pere Lachaise Cemetery</strong> in the 20th arrondissement is the most visited cemetery in the world, and the final resting place of many famous figures. <strong>Jim Morrison</strong> of The Doors is perhaps the most visited grave. <strong>Oscar Wilde's</strong> tomb is famous for its Jacob Epstein sculpture. Other notable burials include <strong>Edith Piaf</strong>, <strong>Frederic Chopin</strong>, <strong>Marcel Proust</strong>, <strong>Moliere</strong>, <strong>Isadora Duncan</strong>, and <strong>Colette</strong>. The cemetery was founded in 1804 and covers over 100 acres.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item animate-on-scroll" role="listitem">
+                        <summary class="faq-question" aria-label="What movies were filmed in Paris?">
+                            <span>What movies were filmed in Paris?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Paris is one of the most filmed cities in the world. Iconic films shot on location include <strong>Midnight in Paris</strong> (2011) by Woody Allen, <strong>Amelie</strong> (2001) set in Montmartre, <strong>Funny Face</strong> (1957) starring Audrey Hepburn, and <strong>An American in Paris</strong> (1951) with Gene Kelly. Modern blockbusters like <strong>Inception</strong>, <strong>Mission: Impossible - Fallout</strong>, and <strong>The Da Vinci Code</strong> have also used Paris as a dramatic backdrop. French New Wave classics by Godard and Truffaut transformed Paris into a character itself.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item animate-on-scroll" role="listitem">
+                        <summary class="faq-question" aria-label="Which celebrities have stayed at the Ritz Paris?">
+                            <span>Which celebrities have stayed at the Ritz Paris?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>The <strong>Ritz Paris</strong> on Place Vendome is perhaps the most storied hotel in the world. <strong>Coco Chanel</strong> lived there for over 30 years in a private suite. <strong>Ernest Hemingway</strong> famously helped "liberate" the hotel's bar during WWII, which is now named Bar Hemingway in his honor. <strong>Marcel Proust</strong> was a regular diner. <strong>Princess Diana</strong> had her last meal at the hotel's L'Espadon restaurant. Other legendary guests include <strong>Charlie Chaplin</strong>, <strong>Audrey Hepburn</strong>, <strong>F. Scott Fitzgerald</strong>, and <strong>Elton John</strong>.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="CelebrityParis.com home">
+                        <span class="logo-text">Celebrity<em>Paris</em></span>
+                    </a>
+                    <p class="footer-tagline">The Living Archive of Celebrity Culture in Paris</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul>
+                        <li><a href="celebrities.html">Celebrity Directory</a></li>
+                        <li><a href="venues.html">Iconic Venues</a></li>
+                        <li><a href="map.html">Paris Map</a></li>
+                        <li><a href="fashion.html">Fashion Archive</a></li>
+                        <li><a href="timeline.html">Historical Timeline</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-label="Category navigation">
+                    <h3 class="footer-heading">Categories</h3>
+                    <ul>
+                        <li><a href="celebrities.html?category=film">Film</a></li>
+                        <li><a href="celebrities.html?category=fashion">Fashion</a></li>
+                        <li><a href="celebrities.html?category=music">Music</a></li>
+                        <li><a href="celebrities.html?category=literature">Literature</a></li>
+                        <li><a href="celebrities.html?category=art">Art</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-info">
+                    <h3 class="footer-heading">About</h3>
+                    <p>CelebrityParis.com documents public celebrity culture in Paris. We cover public appearances, venues, and cultural events — never private lives. All information is sourced from public reporting.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="footerYear">2026</span> CelebrityParis.com. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
