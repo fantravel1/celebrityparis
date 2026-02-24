@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CelebrityParis.com - The Living Archive of Celebrity Culture in Paris</title>
+  <meta name="description" content="Explore how celebrities experience Paris. Search 50+ iconic celebrities, 30+ legendary venues, fashion weeks, film premieres, and the cultural history that makes Paris the global stage of fame.">
+  <meta name="theme-color" content="#1A1A2E">
+  <link rel="canonical" href="https://celebrityparis.com/">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CelebrityParis.com - The Living Archive of Celebrity Culture in Paris">
+  <meta property="og:description" content="Explore how celebrities experience Paris. Search 50+ iconic celebrities, 30+ legendary venues, fashion weeks, film premieres, and the cultural history that makes Paris the global stage of fame.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://celebrityparis.com/">
+  <meta property="og:image" content="https://celebrityparis.com/images/og-homepage.jpg">
+  <meta property="og:site_name" content="CelebrityParis.com">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CelebrityParis.com - The Living Archive of Celebrity Culture in Paris">
+  <meta name="twitter:description" content="Explore how celebrities experience Paris. Search 50+ iconic celebrities, 30+ legendary venues, fashion weeks, film premieres, and the cultural history that makes Paris the global stage of fame.">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CelebrityParis.com",
+    "url": "https://celebrityparis.com",
+    "logo": "https://celebrityparis.com/images/logo.png",
+    "description": "The Living Archive of Celebrity Culture in Paris",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CelebrityParis.com",
+    "url": "https://celebrityparis.com",
+    "description": "The Living Archive of Celebrity Culture in Paris",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://celebrityparis.com/celebrities.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "CelebrityParis.com - The Living Archive of Celebrity Culture in Paris",
+    "description": "Explore how celebrities experience Paris. Search 50+ iconic celebrities, 30+ legendary venues, fashion weeks, film premieres, and the cultural history that makes Paris the global stage of fame.",
+    "url": "https://celebrityparis.com/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "CelebrityParis.com",
+      "url": "https://celebrityparis.com"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Celebrity Culture in Paris"
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-02-24"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://celebrityparis.com/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="main-nav container" aria-label="Primary navigation">
+      <a href="/" class="logo">Celebrity<span class="gold">Paris</span></a>
+      <div class="nav-search">
+        <input type="search" placeholder="Search celebrities, venues, events..." id="globalSearch" autocomplete="off" aria-label="Search celebrities, venues, and events">
+        <div class="search-autocomplete" id="searchAutocomplete"></div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/celebrities.html">Celebrities</a></li>
+        <li><a href="/venues.html">Venues</a></li>
+        <li><a href="/fashion.html">Fashion</a></li>
+        <li><a href="/film.html">Film</a></li>
+        <li><a href="/timeline.html">Timeline</a></li>
+        <li><a href="/map.html">Map</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+      <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">&#9788;</span>
+        <span class="icon-moon">&#9790;</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Section 1: Hero -->
+    <section class="hero-section" aria-label="Introduction">
+      <div class="hero-content container">
+        <h1 class="hero-heading">Where Celebrity Culture Lives in Paris</h1>
+        <p class="hero-subheading">The definitive archive of how the world's most iconic figures have experienced the City of Light</p>
+        <div class="hero-search">
+          <label for="heroSearch" class="visually-hidden">Search your favorite celebrity</label>
+          <input type="search" id="heroSearch" class="hero-search-input" placeholder="Search your favorite celebrity..." autocomplete="off" aria-label="Search your favorite celebrity">
+          <div class="hero-search-autocomplete" id="heroSearchAutocomplete"></div>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Archive statistics">
+          <span class="hero-stat" role="listitem">55+ Celebrities</span>
+          <span class="hero-stat-divider" aria-hidden="true">|</span>
+          <span class="hero-stat" role="listitem">30+ Iconic Venues</span>
+          <span class="hero-stat-divider" aria-hidden="true">|</span>
+          <span class="hero-stat" role="listitem">100+ Years of Culture</span>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-arrow">&#8595;</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Featured Celebrities -->
+    <section class="featured-celebrities animate-on-scroll" aria-labelledby="featuredCelebritiesTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="featuredCelebritiesTitle" class="section-title">Icons of Paris</h2>
+          <p class="section-subtitle">From Hemingway's caf&eacute;s to Beyonc&eacute;'s Louvre &mdash; discover how legends experienced Paris</p>
+        </div>
+        <div class="celebrity-grid" id="featuredCelebrities" role="list" aria-label="Featured celebrities">
+          <!-- 8 celebrity cards populated by JS from data.js -->
+        </div>
+        <div class="section-cta">
+          <a href="/celebrities.html" class="btn btn-primary">Explore All Celebrities</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Map Preview -->
+    <section class="map-preview animate-on-scroll" aria-labelledby="mapPreviewTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="mapPreviewTitle" class="section-title">The Celebrity Map of Paris</h2>
+          <p class="section-subtitle">Every venue. Every appearance. Every story.</p>
+        </div>
+        <div id="homeMap" class="home-map" role="application" aria-label="Interactive map of celebrity venues in Paris" style="height: 400px; width: 100%;"></div>
+        <p class="map-description">Explore an interactive map layered with celebrity sightings, legendary venues, fashion week locations, and historic film premieres across the 20 arrondissements of Paris.</p>
+        <div class="section-cta">
+          <a href="/map.html" class="btn btn-primary">Explore Full Map</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Featured Venues -->
+    <section class="featured-venues animate-on-scroll" aria-labelledby="featuredVenuesTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="featuredVenuesTitle" class="section-title">Legendary Venues</h2>
+          <p class="section-subtitle">The stages of Parisian celebrity culture</p>
+        </div>
+        <div class="venue-grid" id="featuredVenues" role="list" aria-label="Featured venues">
+          <!-- 6 venue cards populated by JS from data.js -->
+        </div>
+        <div class="section-cta">
+          <a href="/venues.html" class="btn btn-secondary">View All Venues</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Fashion & Couture -->
+    <section class="fashion-highlight animate-on-scroll" aria-labelledby="fashionTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="fashionTitle" class="section-title">Fashion Capital of the World</h2>
+          <p class="section-subtitle">Paris Fashion Week, Haute Couture, and the front rows that define style</p>
+        </div>
+        <p class="section-text">For over a century, Paris has set the global standard for fashion. From the ateliers of Chanel and Dior to the modern spectacles of Balenciaga and Louis Vuitton, the city's runways have drawn the world's most famous faces. Every season, celebrities descend upon the Tuileries, the Palais de Tokyo, and countless other venues to witness the art of couture firsthand.</p>
+        <div class="highlight-cards">
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#9733;</div>
+            <h3>Fashion Week</h3>
+            <p>Twice a year, Paris becomes the epicenter of global style. Discover the celebrity front rows, after-parties, and street style moments that define each season.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#9830;</div>
+            <h3>Haute Couture</h3>
+            <p>The pinnacle of fashion craftsmanship. Explore the intimate world of couture shows where only the most exclusive names receive invitations.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#9827;</div>
+            <h3>Designer Houses</h3>
+            <p>Chanel on Rue Cambon. Dior on Avenue Montaigne. Louis Vuitton on the Champs-&Eacute;lys&eacute;es. Walk the streets where fashion history lives.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a href="/fashion.html" class="btn btn-primary">Explore Fashion in Paris</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Film & Cinema -->
+    <section class="film-highlight animate-on-scroll" aria-labelledby="filmTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="filmTitle" class="section-title">Paris on Screen</h2>
+          <p class="section-subtitle">Where cinema history was made</p>
+        </div>
+        <p class="section-text">Paris is not merely a backdrop for cinema &mdash; it is a character unto itself. From the Lumi&egrave;re brothers' first projections to today's Cannes-adjacent premieres, the city has shaped the art of filmmaking while attracting the greatest actors, directors, and storytellers from around the world.</p>
+        <div class="highlight-cards">
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#127909;</div>
+            <h3>Film Premieres</h3>
+            <p>The grand cinemas of the Champs-&Eacute;lys&eacute;es and Le Grand Rex have hosted legendary premieres, drawing A-list stars to Paris for decades.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#127916;</div>
+            <h3>Paris as a Set</h3>
+            <p>From Midnight in Paris to Am&eacute;lie, discover the iconic filming locations where Hollywood and French cinema have immortalized the city.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-card-icon" aria-hidden="true">&#127911;</div>
+            <h3>French New Wave</h3>
+            <p>Godard, Truffaut, Varda &mdash; the movement that revolutionized cinema was born on the streets of Paris. Trace the cafes and cinemas where it all began.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a href="/film.html" class="btn btn-primary">Explore Film in Paris</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Timeline Preview -->
+    <section class="timeline-preview animate-on-scroll" aria-labelledby="timelineTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="timelineTitle" class="section-title">A Century of Celebrity Culture</h2>
+          <p class="section-subtitle">Trace the evolution of fame in Paris from the 1920s to today</p>
+        </div>
+        <div class="timeline-scroll" id="timelinePreview" role="list" aria-label="Timeline of celebrity culture in Paris by decade">
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1920s</span>
+            <p class="timeline-label">The Jazz Age &amp; Lost Generation</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1930s</span>
+            <p class="timeline-label">Art Deco &amp; Avant-Garde</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1940s</span>
+            <p class="timeline-label">War, Liberation &amp; Resistance</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1950s</span>
+            <p class="timeline-label">Existentialism &amp; Cinema</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1960s</span>
+            <p class="timeline-label">New Wave &amp; Revolution</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1970s</span>
+            <p class="timeline-label">Disco, Punk &amp; Liberation</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1980s</span>
+            <p class="timeline-label">Supermodels &amp; Designer Era</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">1990s</span>
+            <p class="timeline-label">Global Fame &amp; Pop Icons</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">2000s</span>
+            <p class="timeline-label">Digital Age &amp; Reality Culture</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">2010s</span>
+            <p class="timeline-label">Social Media &amp; Influencers</p>
+          </div>
+          <div class="timeline-decade" role="listitem">
+            <span class="timeline-year">2020s</span>
+            <p class="timeline-label">Post-Pandemic Renaissance</p>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="/timeline.html" class="btn btn-secondary">Explore the Full Timeline</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Celebrity Search CTA -->
+    <section class="search-cta-section animate-on-scroll" aria-labelledby="searchCTATitle">
+      <div class="container">
+        <h2 id="searchCTATitle" class="section-title">Where Has Your Favorite Celebrity Appeared in Paris?</h2>
+        <p class="section-text">Type any name to discover their Parisian history &mdash; from hotel suites and restaurant reservations to fashion week front rows and film premieres.</p>
+        <div class="cta-search">
+          <label for="ctaSearch" class="visually-hidden">Search for a celebrity</label>
+          <input type="search" id="ctaSearch" class="cta-search-input" placeholder="Enter a celebrity name..." autocomplete="off" aria-label="Search for a celebrity in Paris">
+          <div class="cta-search-autocomplete" id="ctaSearchAutocomplete"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: FAQ (AEO Optimized) -->
+    <section class="faq-section animate-on-scroll" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faqTitle" class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion" id="homeFAQ" role="list" aria-label="Frequently asked questions about celebrity culture in Paris">
+          <!-- FAQ items populated by JS from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Schema (separate script for AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which celebrities have lived in Paris?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many iconic celebrities have lived in Paris, including Ernest Hemingway, Josephine Baker, Pablo Picasso, Jim Morrison, Coco Chanel, and more recently, Johnny Depp and Natalie Portman. Paris has been a magnet for artists, writers, musicians, and film stars for over a century."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the most famous celebrity venues in Paris?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paris's most famous celebrity venues include the Ritz Paris, Caf\u00e9 de Flore, Les Deux Magots, the Moulin Rouge, Le Meurice, the Lido, Maxim's, and the Plaza Ath\u00e9n\u00e9e. These establishments have hosted everyone from Hemingway and Coco Chanel to modern-day pop stars and film icons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is Paris Fashion Week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paris Fashion Week takes place twice a year: the Spring/Summer collections are shown in September-October, and the Fall/Winter collections are presented in February-March. Haute Couture Fashion Week also occurs twice yearly in January and July. These events draw the world's biggest celebrities to Paris."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What famous movies were filmed in Paris?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hundreds of famous films have been shot in Paris, including Midnight in Paris, Am\u00e9lie, The Da Vinci Code, Before Sunset, An American in Paris, Breathless, The Bourne Identity, Moulin Rouge!, Ratatouille, and Mission: Impossible - Fallout. The city's iconic landmarks and streets provide unforgettable backdrops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do celebrities stay in Paris?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Celebrities in Paris typically stay at the city's palace hotels, including the Ritz Paris, Le Meurice, Four Seasons Hotel George V, Plaza Ath\u00e9n\u00e9e, H\u00f4tel de Crillon, and The Bristol. These historic luxury hotels offer the privacy, service, and prestige that high-profile guests demand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How has Paris influenced celebrity culture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paris has shaped celebrity culture through its fashion houses, literary salons, art galleries, film festivals, and nightlife. The city invented the concept of haute couture, hosted the Lost Generation of writers, launched the New Wave cinema movement, and continues to set trends that define global pop culture."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Section 10: Newsletter Signup -->
+    <section class="newsletter-section animate-on-scroll" aria-labelledby="newsletterTitle">
+      <div class="container">
+        <h2 id="newsletterTitle" class="section-title">Stay Connected to Parisian Celebrity Culture</h2>
+        <p class="section-subtitle">Get the latest stories, new archive additions, and exclusive features delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
+          <div class="newsletter-input-group">
+            <label for="newsletterEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email address" required aria-label="Enter your email address for newsletter">
+            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+          </div>
+        </form>
+        <p class="privacy-note">We respect your privacy. Unsubscribe at any time. No spam, ever.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-brand">
+        <h3>Celebrity<span class="gold">Paris</span></h3>
+        <p>The Living Archive of Celebrity Culture in Paris</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/celebrities.html">Celebrities</a></li>
+          <li><a href="/venues.html">Venues</a></li>
+          <li><a href="/fashion.html">Fashion</a></li>
+          <li><a href="/film.html">Film</a></li>
+          <li><a href="/timeline.html">Timeline</a></li>
+          <li><a href="/map.html">Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-categories">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="/celebrities.html?category=film">Film Stars</a></li>
+          <li><a href="/celebrities.html?category=fashion">Fashion Icons</a></li>
+          <li><a href="/celebrities.html?category=music">Musicians</a></li>
+          <li><a href="/celebrities.html?category=literature">Literary Legends</a></li>
+          <li><a href="/celebrities.html?category=art">Artists</a></li>
+        </ul>
+      </div>
+      <div class="footer-about">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about.html">Our Mission</a></li>
+          <li><a href="/about.html#ethics">Ethics</a></li>
+          <li><a href="/about.html#sources">Sources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 CelebrityParis.com &mdash; The Living Archive of Celebrity Culture in Paris</p>
+      <p class="footer-note">All information sourced from public records, press archives, and documented cultural history.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Site JS -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
